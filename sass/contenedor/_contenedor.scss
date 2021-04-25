@@ -1,0 +1,34 @@
+#contenedor {
+  width: 100%;
+  background-color: #d9dade;
+  padding: 1em;
+  animation: aparecePagina 1s ease-in-out;
+  * + * {
+    margin-top: 1.5rem;
+  }
+  @import "./informacion_personal/informacion_personal";
+  @import "./proyectos/proyectos";
+  @import "./conocimiento/conocimiento";
+  @import "./blog/blog";
+  @import "./experiencias/experiencia";
+  @import "./hoobies/hobbies";
+  @import "./pie_pagina/pie_pagina";
+  @keyframes aparecePagina {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @include esc_contenedor();
+}

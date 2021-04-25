@@ -1,0 +1,19 @@
+#informacion_personal {
+  width: 100%;
+
+  .descripcion,
+  .fila {
+    @include display_flex(column, flex-start, flex-start);
+    .columna {
+    }
+  }
+  .descripcion .fila .columna {
+    .fila {
+      @include display_flex(row, space-around, center);
+      & > * + * {
+        margin-top: 0;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

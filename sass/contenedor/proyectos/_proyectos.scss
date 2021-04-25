@@ -1,0 +1,33 @@
+#proyectos {
+  background-color: none;
+  .tarjeta {
+    padding: 1rem;
+    .fila {
+      @include display_flex(row, flex-start, center);
+      & > * + * {
+        margin-top: 0;
+        margin-left: 0.5rem;
+      }
+
+      button {
+        margin-top: 0;
+        padding: 0.5em 1em;
+        border: 1px solid #2f80ed;
+        border-radius: 12px;
+        background-color: white;
+        &:nth-child(1) {
+          background-color: #2f80ed;
+          background: #2f80ed;
+          a {
+            color: white;
+          }
+        }
+
+        a {
+          text-transform: capitalize;
+          color: #2f80ed;
+        }
+      }
+    }
+  }
+}

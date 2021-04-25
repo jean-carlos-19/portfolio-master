@@ -1,0 +1,12 @@
+#experiencia {
+  figure {
+    @include display_flex(row, space-between, center);
+    & > img + figcaption {
+      margin-left: 0.5rem;
+    }
+    img {
+      max-width: 25vmin;
+    }
+  }
+  @include esc_experiencias();
+}

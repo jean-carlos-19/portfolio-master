@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+h2 {
+  @include estilo_texto("Montserrat", 600, start, 24px, #4f4f4f, 29px);
+}
+h3 {
+  @include estilo_texto("Montserrat", bold, start, 18px, #4f4f4f, 22px);
+  text-transform: uppercase;
+}
+h4 {
+  @include estilo_texto("Montserrat", 5000, start, 16px, #000000, 20px);
+}
+h6 {
+  @include estilo_texto("Montserrat", 500, start, 16px, #e0e0e0, 20px);
+}
+p {
+  @include estilo_texto("Montserrat", 500, start, 18px, #828282, 22px);
+}
+span {
+  @include estilo_texto("Montserrat", 500, start, 16px, #4f4f4f, 20px);
+  text-transform: uppercase;
+}
+.subtitulo {
+  @include estilo_texto("Montserrat", 500, start, 14px, #828282, 17px);
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #2f80ed;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  border: none;
+  border-radius: 12px;
+}
+
+.tarjeta {
+  width: 100%;
+  padding: 1em;
+  background: #ffffff;
+  border-radius: 12px;
+}

@@ -1,0 +1,14 @@
+@mixin esc_conocimiento {
+  @media screen and (min-width: 37.5rem) {
+    & {
+      display: block;
+      .fila {
+        @include display_flex(row, space-between, flex-start);
+        .columna {
+          margin-top: 0;
+          flex-basis: 40%;
+        }
+      }
+    }
+  }
+}

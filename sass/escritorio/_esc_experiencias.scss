@@ -1,0 +1,13 @@
+@mixin esc_experiencias {
+  @media screen and (min-width: 37.5rem) {
+    & {
+      display: block;
+      figure {
+        align-items: flex-start;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

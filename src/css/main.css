@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize; }
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-align: start;
+  font-size: 24px;
+  color: #4f4f4f;
+  line-height: 29px; }
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: start;
+  font-size: 18px;
+  color: #4f4f4f;
+  line-height: 22px;
+  text-transform: uppercase; }
+
+h4 {
+  font-family: "Montserrat";
+  font-weight: 5000;
+  text-align: start;
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px; }
+
+h6 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: start;
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 20px; }
+
+p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: start;
+  font-size: 18px;
+  color: #828282;
+  line-height: 22px; }
+
+span {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: start;
+  font-size: 16px;
+  color: #4f4f4f;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.subtitulo {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: start;
+  font-size: 14px;
+  color: #828282;
+  line-height: 17px; }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #2f80ed; }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+  border: none;
+  border-radius: 12px; }
+
+.tarjeta {
+  width: 100%;
+  padding: 1em;
+  background: #ffffff;
+  border-radius: 12px; }
+
+#contenedor {
+  width: 100%;
+  background-color: #d9dade;
+  padding: 1em;
+  animation: aparecePagina 1s ease-in-out; }
+  #contenedor * + * {
+    margin-top: 1.5rem; }
+  #contenedor #informacion_personal {
+    width: 100%; }
+    #contenedor #informacion_personal .descripcion,
+    #contenedor #informacion_personal .fila {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    #contenedor #informacion_personal .descripcion .fila .columna .fila {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      #contenedor #informacion_personal .descripcion .fila .columna .fila > * + * {
+        margin-top: 0;
+        margin-left: 0.5rem; }
+  #contenedor #proyectos {
+    background-color: none; }
+    #contenedor #proyectos .tarjeta {
+      padding: 1rem; }
+      #contenedor #proyectos .tarjeta .fila {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
+        #contenedor #proyectos .tarjeta .fila > * + * {
+          margin-top: 0;
+          margin-left: 0.5rem; }
+        #contenedor #proyectos .tarjeta .fila button {
+          margin-top: 0;
+          padding: 0.5em 1em;
+          border: 1px solid #2f80ed;
+          border-radius: 12px;
+          background-color: white; }
+          #contenedor #proyectos .tarjeta .fila button:nth-child(1) {
+            background-color: #2f80ed;
+            background: #2f80ed; }
+            #contenedor #proyectos .tarjeta .fila button:nth-child(1) a {
+              color: white; }
+          #contenedor #proyectos .tarjeta .fila button a {
+            text-transform: capitalize;
+            color: #2f80ed; }
+  #contenedor #conocimiento .columna .habilidades {
+    width: 100%; }
+    #contenedor #conocimiento .columna .habilidades:nth-child(1) .barra p {
+      width: 45%; }
+    #contenedor #conocimiento .columna .habilidades:nth-child(2) .barra p {
+      width: 45%; }
+    #contenedor #conocimiento .columna .habilidades:nth-child(3) .barra p {
+      width: 75%; }
+    #contenedor #conocimiento .columna .habilidades:nth-child(4) .barra p {
+      width: 5%; }
+    #contenedor #conocimiento .columna .habilidades:nth-child(5) .barra p {
+      width: 5%; }
+    #contenedor #conocimiento .columna .habilidades:nth-child(6) .barra p {
+      width: 15%; }
+  #contenedor #conocimiento .barra {
+    border: none;
+    border-radius: 12px;
+    height: 2vmax;
+    background-color: #c4c4c4; }
+    #contenedor #conocimiento .barra p {
+      border: none;
+      border-radius: 12px;
+      height: 2vmax;
+      background-color: #2f80ed; }
+  @media screen and (min-width: 37.5rem) {
+    #contenedor #conocimiento {
+      display: block; }
+      #contenedor #conocimiento .fila {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #contenedor #conocimiento .fila .columna {
+          margin-top: 0;
+          flex-basis: 40%; } }
+  @media screen and (min-width: 37.5rem) {
+    #contenedor #blog {
+      display: block; } }
+  #contenedor #experiencia figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #contenedor #experiencia figure > img + figcaption {
+      margin-left: 0.5rem; }
+    #contenedor #experiencia figure img {
+      max-width: 25vmin; }
+  @media screen and (min-width: 37.5rem) {
+    #contenedor #experiencia {
+      display: block; }
+      #contenedor #experiencia figure {
+        align-items: flex-start; }
+        #contenedor #experiencia figure img {
+          max-width: 100%; } }
+  @media screen and (min-width: 37.5rem) {
+    #contenedor #hoobies {
+      display: block; } }
+  #contenedor #pie_pagina {
+    text-transform: capitalize;
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #contenedor #pie_pagina span {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem; }
+      #contenedor #pie_pagina span,
+      #contenedor #pie_pagina span a {
+        word-spacing: 0.25rem; }
+      #contenedor #pie_pagina span a {
+        color: black;
+        margin-top: 0; }
+
+@keyframes aparecePagina {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+  @media screen and (min-width: 37.5rem) {
+    #contenedor figure,
+    #contenedor .tarjeta {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #contenedor figure .imagen,
+      #contenedor .tarjeta .imagen {
+        flex-basis: 35%; }
+      #contenedor figure figcaption,
+      #contenedor .tarjeta figcaption {
+        margin-top: 0;
+        flex-basis: 60%; } }
+  @media screen and (min-width: 50rem) {
+    #contenedor #grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #contenedor #grid .columna {
+        margin-top: 0;
+        flex-basis: calc(50% - 1rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #contenedor #grid .columna .tarjeta {
+          flex-basis: 100%; }
+        #contenedor #grid .columna #conocimiento .barra,
+        #contenedor #grid .columna #conocimiento p {
+          height: 2vmin; }
+    #contenedor #proyectos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #contenedor #proyectos .tarjeta {
+        flex-basis: calc(33% - 1rem);
+        margin-top: 0; }
+        #contenedor #proyectos .tarjeta figure {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start; }
+          #contenedor #proyectos .tarjeta figure .imagen {
+            align-self: center; }
+            #contenedor #proyectos .tarjeta figure .imagen img {
+              height: 25vmin; }
+          #contenedor #proyectos .tarjeta figure figcaption {
+            margin-top: 1.5rem; }
+    #contenedor #informacion_personal .imagen {
+      flex-basis: 25%; }
+      #contenedor #informacion_personal .imagen img {
+        height: 25vmax; }
+    #contenedor #informacion_personal figcaption {
+      flex-basis: 70%; } }

@@ -1,0 +1,27 @@
+@mixin display_flex($direccion, $principal, $secundaria) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $principal;
+  align-items: $secundaria;
+}
+@mixin dosplay_grid($fila, $columna, $minimo, $relleno) {
+  display: grid;
+  grid-template-columns: repeat($columna, minmax($minimo, 1fr));
+  grid-template-rows: $fila;
+  grid-gap: $relleno;
+}
+@mixin estilo_texto(
+  $fuente,
+  $negrita,
+  $alineamiento_texto,
+  $tamano_fuente,
+  $color,
+  $interlineado
+) {
+  font-family: $fuente;
+  font-weight: $negrita;
+  text-align: $alineamiento_texto;
+  font-size: $tamano_fuente;
+  color: $color;
+  line-height: $interlineado;
+}
