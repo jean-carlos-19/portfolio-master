@@ -22,7 +22,7 @@
         <h2 > Descripciòn General </h2>
     </section>
     <section >
-         <img align="center"  width="100%" heigth="50vh" src="./src/img/capturas/escritorio.png" alt="figura del sitio web en version escritorio">
+         <img align="center"  width="100%" heigth="50vh" src="./src/img/captura/escritorio.png" alt="figura del sitio web en version escritorio">
     <section>
    
 </section>
@@ -33,10 +33,10 @@
     <nav>
         <ul align="center">
             <h3>
-                <a href="">Demo</a><span> | </span>
-                <a href="">Github </a><span> | </span>
-                <a href="">Devchallenge</a> </a><span> | </span>
-                <a href="">Figma<a>
+                <a href="https://piguavejc-portfolio-master.onrender.com/">Demo</a><span> | </span>
+                <a href="https://github.com/jean-carlos-19/portfolio-master">Github </a><span> | </span>
+                <a href="https://devchallenges.io/solutions/WGD0Dd5DmTn776lKB0WW">Devchallenge</a> </a><span> | </span>
+                <a href="https://www.figma.com/proto/O7Omgz2iVR7Vox7shf7O8e/portfolio?node-id=1%3A439&scaling=min-zoom&page-id=0%3A1">Figma<a>
             </h3>
         </ul>
     </nav>
